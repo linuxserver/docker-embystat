@@ -1,0 +1,28 @@
+---
+
+# jenkins variables
+project_name: docker-embystat
+external_type: custom_json
+release_type: stable
+release_tag: latest
+ls_branch: master
+repo_vars:
+  - JSON_URL = 'https://api.github.com/repos/mregni/EmbyStat/releases'
+  - JSON_PATH = 'first(.[] | .tag_name)'
+  - CONTAINER_NAME = 'embystat'
+  - BUILD_VERSION_ARG = 'EMBYSTAT_RELEASE'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-embystat'
+  - DOCKERHUB_IMAGE = 'linuxserver/embystat'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/embystat'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/embystat'
+  - DIST_IMAGE = 'ubuntu'
+  - MULTIARCH='false'
+  - CI='true'
+  - CI_WEB='true'
+  - CI_PORT='6555'
+  - CI_SSL='false'
+  - CI_DELAY='120'
+  - CI_DOCKERENV='TZ=US/Pacific'
+  - CI_AUTH='user:password'
+  - CI_WEBPATH=''
