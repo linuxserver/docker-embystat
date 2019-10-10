@@ -24,7 +24,7 @@ pipeline {
     DEV_DOCKERHUB_IMAGE = 'lsiodev/embystat'
     PR_DOCKERHUB_IMAGE = 'lspipepr/embystat'
     DIST_IMAGE = 'ubuntu'
-    MULTIARCH='false'
+    MULTIARCH='true'
     CI='true'
     CI_WEB='true'
     CI_PORT='6555'
