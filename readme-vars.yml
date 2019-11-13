@@ -10,6 +10,8 @@ project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_
 # supported architectures
 available_architectures:
   - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
+  - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
 
 # development version
 development_versions: false
@@ -32,7 +34,7 @@ param_env_vars:
 # optional container parameters
 opt_param_usage_include_env: false
 opt_param_env_vars:
-  - { env_var: "BASE_URL", env_value: "/ombi", desc: "Subfolder can optionally be defined as an env variable for reverse proxies. Keep in mind that once this value is defined, the gui setting for base url no longer works. To use the gui setting, remove this env variable." }
+  - { env_var: "BASE_URL", env_value: "/embystat", desc: "Subfolder can optionally be defined as an env variable for reverse proxies. Keep in mind that once this value is defined, the gui setting for base url no longer works. To use the gui setting, remove this env variable." }
 
 optional_block_1: false
 optional_block_1_items: ""
@@ -44,4 +46,5 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "12.11.19:", desc: "Multi-arch builds." }
   - { date: "10.09.19:", desc: "Initial Release." }
