@@ -46,5 +46,6 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "04.12.19:", desc: "Disable in app updates." }
   - { date: "12.11.19:", desc: "Multi-arch builds." }
   - { date: "10.09.19:", desc: "Initial Release." }

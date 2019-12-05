@@ -3,4 +3,4 @@
 cd /opt/embystat || exit
 
 exec \
-	s6-setuidgid abc /opt/embystat/EmbyStat
+	s6-setuidgid abc /opt/embystat/EmbyStat --no-updates
