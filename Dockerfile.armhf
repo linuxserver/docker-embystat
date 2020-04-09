@@ -30,7 +30,6 @@ RUN \
 	unzip /tmp/embystat.zip -d \
 	/opt/embystat/ 2> /dev/null || true && \
  chmod +x /opt/embystat/EmbyStat && \
- ln -s /config /opt/embystat/config && \
  echo "**** clean up ****" && \
  rm -rf \
 	/tmp/* \
