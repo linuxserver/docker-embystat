@@ -40,7 +40,7 @@ Find us at:
 
 [Embystat](https://github.com/mregni/EmbyStat) is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.
 
-[![embystat](https://github.com/mregni/EmbyStat/raw/develop/EmbyStat.Web/ClientApp/src/assets/images/logo_color.png)](https://github.com/mregni/EmbyStat)
+[![embystat](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/embystat-logo.png)](https://github.com/mregni/EmbyStat)
 
 ## Supported Architectures
 
