@@ -3,5 +3,6 @@
 cd /opt/embystat || exit
 
 exec \
-	s6-setuidgid abc /opt/embystat/EmbyStat --no-updates \
-		--data-dir /config --log-dir /config/logs --config-dir /config
+    s6-setuidgid abc /opt/embystat/EmbyStat \
+        --data-dir /config --log-dir /config/logs \
+        --config-dir /config --disable-updates
