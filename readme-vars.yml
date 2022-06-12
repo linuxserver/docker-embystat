@@ -46,6 +46,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "11.06.22:", desc: "Rebase to focal, update disable updates flag." }
   - { date: "08.04.20:", desc: "Structural changes for beta18." }
   - { date: "04.12.19:", desc: "Disable in app updates." }
   - { date: "12.11.19:", desc: "Multi-arch builds." }

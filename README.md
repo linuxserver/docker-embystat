@@ -221,6 +221,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **11.06.22:** - Rebase to focal, update disable updates flag.
 * **08.04.20:** - Structural changes for beta18.
 * **04.12.19:** - Disable in app updates.
 * **12.11.19:** - Multi-arch builds.
