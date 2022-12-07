@@ -1,9 +1,8 @@
 #!/usr/bin/with-contenv bash
 
-cd /opt/embystat || exit
-
 exec \
-    s6-setuidgid abc /opt/embystat/EmbyStat \
+    s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 6555" \
+    cd /opt/embystat s6-setuidgid abc /opt/embystat/EmbyStat \
         --data-dir /config \
         --log-dir /config/logs \
         --config-dir /config \

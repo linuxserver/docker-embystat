@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-ubuntu:focal
+FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy
 
 # set version label
 ARG BUILD_DATE
@@ -13,9 +13,8 @@ ENV HOME="/config"
 RUN \
   apt-get update && \
   apt-get install -y \
-    jq \
-    libicu66 \
-    libssl1.0 \
+    libicu70 \
+    libssl3 \
     unzip && \
   echo "**** install embystat ****" && \
   mkdir -p \

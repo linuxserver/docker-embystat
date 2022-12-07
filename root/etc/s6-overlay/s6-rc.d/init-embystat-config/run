@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv bash
+
+# make our folders
+mkdir -p /config/logs
+
+# permissions
+lsiown -R abc:abc \
+    /config
