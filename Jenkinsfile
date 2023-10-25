@@ -63,7 +63,7 @@ pipeline {
           env.CODE_URL = 'https://github.com/' + env.LS_USER + '/' + env.LS_REPO + '/commit/' + env.GIT_COMMIT
           env.DOCKERHUB_LINK = 'https://hub.docker.com/r/' + env.DOCKERHUB_IMAGE + '/tags/'
           env.PULL_REQUEST = env.CHANGE_ID
-          env.TEMPLATED_FILES = 'Jenkinsfile README.md LICENSE .editorconfig ./.github/CONTRIBUTING.md ./.github/FUNDING.yml ./.github/ISSUE_TEMPLATE/config.yml ./.github/ISSUE_TEMPLATE/issue.bug.yml ./.github/ISSUE_TEMPLATE/issue.feature.yml ./.github/PULL_REQUEST_TEMPLATE.md ./root/donate.txt ./root/etc/s6-overlay/s6-rc.d/init-deprecate/run ./root/etc/s6-overlay/s6-rc.d/init-deprecate/up ./root/etc/s6-overlay/s6-rc.d/init-deprecate/type ./root/etc/s6-overlay/s6-rc.d/init-deprecate/dependencies.d/init-config-end ./root/etc/s6-overlay/s6-rc.d/init-services/dependencies.d/init-deprecate ./root/etc/s6-overlay/s6-rc.d/user/contents.d/init-deprecate'
+          env.TEMPLATED_FILES = 'Jenkinsfile README.md LICENSE .editorconfig ./.github/CONTRIBUTING.md ./.github/FUNDING.yml ./.github/ISSUE_TEMPLATE/config.yml ./.github/ISSUE_TEMPLATE/issue.bug.yml ./.github/ISSUE_TEMPLATE/issue.feature.yml ./.github/PULL_REQUEST_TEMPLATE.md ./root/donate.txt ./root/etc/cont-init.d/99-deprecation'
         }
         script{
           env.LS_RELEASE_NUMBER = sh(
