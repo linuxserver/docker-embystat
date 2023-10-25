@@ -26,6 +26,9 @@ Find us at:
 * [GitHub](https://github.com/linuxserver) - view the source for all of our repositories.
 * [Open Collective](https://opencollective.com/linuxserver) - please consider helping us by either donating or contributing to our budget
 
+# This image is deprecated. We will not offer support for this image and it will not be updated.
+
+Embystat (upstream project) is no longer actively developed.
 # [linuxserver/embystat](https://github.com/linuxserver/docker-embystat)
 
 [![Scarf.io pulls](https://scarf.sh/installs-badge/linuxserver-ci/linuxserver%2Fembystat?color=94398d&label-color=555555&logo-color=ffffff&style=for-the-badge&package-type=docker)](https://scarf.sh/gateway/linuxserver-ci/docker/linuxserver%2Fembystat)
@@ -287,6 +290,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **25.10.23:** - Deprecate image due to upstream app no longer being in active development per [this update](https://github.com/mregni/EmbyStat/pull/1933/files).
 * **03.07.23:** - Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
 * **11.06.22:** - Rebase to focal, update disable updates flag.
 * **08.04.20:** - Structural changes for beta18.
