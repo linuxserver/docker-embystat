@@ -14,6 +14,11 @@ available_architectures:
 development_versions: false
 development_versions_items:
   - {tag: "latest", desc: "EmbyStat releases"}
+
+# deprecation information
+project_deprecation_status: true
+project_deprecation_message: "Embystat (upstream project) is no longer actively developed."
+
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
@@ -38,6 +43,7 @@ app_setup_block: |
   Access the webui at `<your-ip>:6555`. Follow the setup wizard on initial install.  Then configure the required services.
 # changelog
 changelogs:
+  - {date: "25.10.23:", desc: "Deprecate image due to upstream app no longer being in active development per [this update](https://github.com/mregni/EmbyStat/pull/1933/files)."}
   - {date: "03.07.23:", desc: "Deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)"}
   - {date: "11.06.22:", desc: "Rebase to focal, update disable updates flag."}
   - {date: "08.04.20:", desc: "Structural changes for beta18."}
